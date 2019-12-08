@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mazda modele CX">
+  <meta name="keywords" content="mazda, modele mazd, parametry">
+  <meta name="author" content="Mirek">
+  <link ref="stylesheet" href="reset.css" type="text/css" />
+  <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+  <link rel="stylesheet" href="main.css" type="text/css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Indie+Flower&display=swap&subset=latin-ext" rel="stylesheet"> 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Mazada seria CX</title>
+</head>
+
+<body onload="zegarek()">
+
+  <header class="top">
+
+    <nav class="navbar fixed-top navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#topmenu"
+          aria-controls="topmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="topmenu" style="">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Strona główna</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Modele
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#sam1" onclick="select(1)">CX-3</a>
+                <a class="dropdown-item" href="#sam2" onclick="select(2)">CX-30</a>
+                <a class="dropdown-item" href="#sam3" onclick="select(3)">CX-4</a>
+                <a class="dropdown-item" href="#sam4" onclick="select(4)">CX-5</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.mazda.pl/">Mazda Polska</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:mail@mail.pl">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+
+      <h1 class="hJeden">Mazda – modele serii CX</h1>
+      
+            
+      <div class="opis">
+        <p>Mazda to japońska marka samochodów, której początków możemy doszukać się w 1920 roku,
+          Nazwa producenta pochodzi od zdrobnienia nazwiska założyciela firmy - Jyujiro Matsudy.
+          Rok 1987 przyniósł łączną sprzedaż na poziomie 20 000 000 sztuk. Dwa lata później firma z dumą zaprezentowała
+          światu samochód <span style="color:red; font-weight:bold">Mazda MX-5</span>, model stylistycznie agresywny, a jednocześnie klasyczny, który do dnia
+          dzisiejszego bije rekordy sprzedaży oraz przechodzi do historii jako najczęściej kupowany roadster na świecie.
+        </p>
+      </div>
+
+      <div class="yt">
+        <a href="http://youtube.pl" target="_blank"><i class="demo-icon icon-youtube"></i></a>
+      </div>
+        
+      <div class="fb">
+        <a href="http://facebook.pl" target="_blank"><i class="demo-icon icon-facebook"></i></a>
+      </div>
+      
+      <div id="zegar" class="today"></div> 
+      
+      <div class="models">
+        <h2>Seria CX</h2>
+        <div class="row">
+          <div class="col-sm-6 col-md-3" onclick="select(1)">
+            <a href="#sam1"><img src="img/cx3.jpg" class="img-responsive img-circle"></a>
+            <p>Mazada CX-3</p>
+          </div>
+
+          <div class="col-sm-6 col-md-3" onclick="select(2)">
+            <a href="#sam2"><img src="img/cx30.jpg" class="img-responsive img-circle"></a>
+            <p>Mazda CX-30</p>
+          </div>
+
+          <div class="col-sm-6 col-md-3" onclick="select(3)">
+            <a href="#sam3"><img src="img/cx4.jpg" class="img-responsive img-circle"></a>
+            <p>Mazda CX-4</p>
+          </div>
+
+          <div class="col-sm-6 col-md-3" onclick="select(4)">
+            <a href="#sam4"><img src="img/cx5.jpg" class="img-responsive img-circle"></a>
+              <p>Mazda CX-5</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabele">
+        <h2>Dane pojazdów</h2>
+
+        <div id="sam1" class="tab">
+          <h3>Mazda CX-3</h3>
+          <table>
+            <tr>
+              <td rowspan="2"><img src="img/cx3.jpg"></td>
+              <td>Lata produkcji</td>
+              <td>Silnik</td>
+              <td> Opis modelu</td>
+            </tr>
+            <tr>
+              <td>2003 2017</td>
+              <td>2.0 benzynowy</td>
+              <td class="tdText">Debiut Mazdy 3 miał miejsce w 2003 roku.
+                Zastąpiła ona model 323 i szybko zyskała sławę i uznanie klientów.
+                Mazda 3 bazowała na płycie podłogowej C1 stworzonej wspólnie z Volvo i Fordem.
+                Mazda 3 pierwszej generacji nawiązywała do prototypu MX-Sportif.
+                W Japonii auto było znane pod nazwą Axela. Pojazd wyglądał dynamicznie za sprawą licznych przetłoczeń na
+                błotnikach. Początkowo Mazda 3 dostępna była w wersji pięciodrzwiowego hatchbacka. W 2006 roku dokonano
+                faceliftingu Mazdy 3. Zmodernizowano maskę, zderzaki i wnętrze.</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="sam2" class="tab">
+          <h3>Mazda CX-30</h3>
+
+          <table>
+            <tr>
+              <td rowspan="2"><img src="img/cx30.jpg"></td>
+              <td>Lata produkcji</td>
+              <td>Silnik</td>
+              <td> Opis modelu</td>
+            </tr>
+
+            <tr>
+              <td>2017 2019</td>
+              <td>2.0 benzynowy</td>
+              <td class="tdText">Zbudowany na tej samej płycie podłogowej co nowa Mazda 3 (różnią się jedynie mniejszym
+                o 7 mm rozstawem osi) crossover cx300, mierząc 439,5 cm, jest o 12 cm dłuższy od cx30 i o 15,5 cm
+                krótszy od CX-5. Nie tylko płyta podłogowa wiąże go z obecnym już na rynku nowym kompaktem, ale także
+                zmodyfikowana przez Japończyków stylistyka, zarówno w przypadku nadwozia, jak i wnętrza oraz zastosowane
+                technologiczne nowinki. W porównaniu z hatchbackiem numer 3 mamy do dyspozycji nieco większą
+                powierzchnie bagażową – zamiast 392 l całe 430 l. W ofercie są dwa wzory kolorystyczne wnętrza – Dark
+                Brown lub Dark Blue, i dziewięć kolorów nadwozia, w tym trzy stosowane wyłącznie przez Mazdę.</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="sam3" class="tab">
+          <h3>Mazda CX-4</h3>
+
+          <table>
+            <tr>
+              <td rowspan="2"><img src="img/cx4.jpg"></td>
+              <td>Lata produkcji</td>
+              <td>Silnik</td>
+              <td> Opis modelu</td>
+            </tr>
+
+            <tr>
+              <td>2016 2018</td>
+              <td>1.8 benzynowy</td>
+              <td class="tdText">Zbudowany na tej samej płycie podłogowej co nowa Mazda 3 (różnią się jedynie mniejszym
+                o 7 mm rozstawem osi) crossover cx300, mierząc 439,5 cm, jest o 12 cm dłuższy od cx30 i o 15,5 cm
+                krótszy od CX-5. Nie tylko płyta podłogowa wiąże go z obecnym już na rynku nowym kompaktem, ale także
+                zmodyfikowana przez Japończyków stylistyka, zarówno w przypadku nadwozia, jak i wnętrza oraz zastosowane
+                technologiczne nowinki. W porównaniu z hatchbackiem numer 3 mamy do dyspozycji nieco większą
+                powierzchnie bagażową – zamiast 392 l całe 430 l. W ofercie są dwa wzory kolorystyczne wnętrza – Dark
+                Brown lub Dark Blue, i dziewięć kolorów nadwozia, w tym trzy stosowane wyłącznie przez Mazdę.</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="sam4" class="tab">
+          <h3>Mazda CX-5</h3>
+
+          <table>
+            <tr>
+              <td rowspan="2"><img src="img/cx5.jpg"></td>
+              <td>Lata produkcji</td>
+              <td>Silnik</td>
+              <td>Opis modelu</td>
+            </tr>
+
+            <tr>
+              <td>od 2019</td>
+              <td>2.0 benzynowy</td>
+              <td class="tdText">Zbudowany na tej samej płycie podłogowej co nowa Mazda 3 (różnią się jedynie mniejszym
+                o 7 mm rozstawem osi) crossover cx300, mierząc 439,5 cm, jest o 12 cm dłuższy od cx30 i o 15,5 cm
+                krótszy od CX-5. Nie tylko płyta podłogowa wiąże go z obecnym już na rynku nowym kompaktem, ale także
+                zmodyfikowana przez Japończyków stylistyka, zarówno w przypadku nadwozia, jak i wnętrza oraz zastosowane
+                technologiczne nowinki. W porównaniu z hatchbackiem numer 3 mamy do dyspozycji nieco większą
+                powierzchnie bagażową – zamiast 392 l całe 430 l. W ofercie są dwa wzory kolorystyczne wnętrza – Dark
+                Brown lub Dark Blue, i dziewięć kolorów nadwozia, w tym trzy stosowane wyłącznie przez Mazdę.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <footer>
+        <p>MAZDA</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function select(e) {
+       document.querySelectorAll(".tab").forEach((event, index) => {
+        if (e == index + 1) {
+          event.classList.add("wybrana")
+        } else {
+          event.classList.remove("wybrana")
+        }
+      })
+    }
+  </script>
+
+  <script>
+    function zegarek() {
+      var data = new Date();
+      var godzina = data.getHours();
+      var minuta = data.getMinutes();
+      var sekunda = data.getSeconds();
+      var dzien = data.getDate();
+      var dzienN = data.getDay();
+      var miesiac = data.getMonth();
+      var rok = data.getFullYear();
+
+      if (minuta < 10) minuta = "0" + minuta;
+      if (sekunda < 10) sekunda = "0" + sekunda;
+
+      var dni = new Array("niedziela", "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota");
+      var miesiace = new Array("stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia");
+
+      var pokazDate = "<h4 class='zeg'>Dzisiaj jest  " + dni[dzienN] + '<br / ' + dzien + ' ' + miesiace[miesiac] + ' ' + rok + " roku.</h4>Godzina " + godzina + ':' + minuta + ':' + sekunda;
+      document.getElementById("zegar").innerHTML = pokazDate;
+
+      setTimeout(zegarek, 1000);
+    }        
+  </script>
+
+
+</body>
+</html>
